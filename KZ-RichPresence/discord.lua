@@ -4,14 +4,14 @@ Citizen.CreateThread(function()
         local playerName = GetPlayerName(PlayerId())
         local playerId = GetPlayerServerId(PlayerId())
 
-      local appId = 1180832942528933980
+      local appId = (met ton app id sans les paranthèse evidement !)
       local smallPic = 'small'
       local bigPic = 'big'
 
       SetDiscordAppId(appId)
 
-      SetRichPresence('username: ' .. playerName)
-      SetRichPresence('Server Id: ' .. playerId)
+      SetRichPresence('Nom en jeu : ' .. playerName)
+      SetRichPresence('ID en jeu : ' .. playerId)
 
       SetDiscordRichPresenceAsset(bigPic)
       SetDiscordRichPresenceAssetText('Big Text')
@@ -19,8 +19,8 @@ Citizen.CreateThread(function()
       SetDiscordRichPresenceAssetSmall(smallPic)
       SetDiscordRichPresenceAssetSmallText('Small Text')
 
-      SetDiscordRichPresenceAction(0, '👾|Discord|👾', 'https://discord.gg/MZSk6egzyf')
-      SetDiscordRichPresenceAction(1, '💎|Jouer|💎', 'https://discord.gg/MZSk6egzyf')
+      SetDiscordRichPresenceAction(0, '👾|Discord|👾', 'remplace par ton discord')
+      SetDiscordRichPresenceAction(1, '💎|Jouer|💎', 'remplace par ton connect')
  
  
      Citizen.Wait(1000)    
